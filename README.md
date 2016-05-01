@@ -2,7 +2,7 @@ MyBlindAmbition
 ====================
 ### Intro
 
-I launched my first portfolio site in 2006 as part of the May 1st Reboot. 10 years later they decided to reboot the 'boot and it seemed like a perfect time to refresh my personal site. Unfortunately, I ended up being super busy at work and never got around to working on it. The morning of April 30th I woke up with an idea and managed to throw this site together in one day, working only when my 1.5 yr old was sleeping. All said and done I think I clocked ~10-11 hours on this before launching at 2am May 1st, 2016. I may eventually get around to updating the site as I wanted to have it fluidly controlled by scrolling. That can take time get right so for now the animations are driven by simple click events.
+I launched my first portfolio site in 2006 as part of the May 1st Reboot. 10 years later they decided to reboot the 'boot and it seemed like a perfect time to refresh my personal site. Unfortunately, I ended up being super busy at work and never got around to working on it. The morning of April 30th I woke up with an idea and managed to throw this site together in one day, working only when my 1.5 yr old was sleeping. All said and done I think I clocked ~10-11 hours on this before launching at 2am May 1st, 2016. I wanted to have the animations fluidly controlled by scrolling but that can take time get right so for now the animations are driven by simple click events.
 
 The site is built on top of my webGL framework called Aero. (https://github.com/Oblioio/AeroJS) It's kind of a wierd framework and may not make sense due to the face that there is currently no documentation. 
 
