@@ -10,16 +10,9 @@ uniform float u_lerp;
 varying vec3 v_color;
 
 void main() {
-	// vec2 localized = a_Position/vec2(825.5, 563.);
-	// vec2 pos = mix(
-	// 		vec2((a_Position1.x/563.)*(u_resolution.y/u_resolution.x), a_Position1.y/563.),
-	// 		vec2((a_Position2.x/563.)*(u_resolution.y/u_resolution.x), a_Position2.y/563.),
-	// 		clamp(u_lerp+, 0, 1)
-	// 	);
 	vec2 pos1 = vec2((a_Position1.x/563.)*(u_resolution.y/u_resolution.x), a_Position1.y/563.);
 	vec2 pos2 = vec2((a_Position2.x/563.)*(u_resolution.y/u_resolution.x), a_Position2.y/563.);
 	
-	// float lerpEase = clamp((u_lerp*3.-1.)+pos1.y, 0., 1.);
 	float lerpEase = pow(u_lerp, 1.+(1.-abs(pos1.x))*(1.-abs(pos1.y)));
 	vec2 pos = mix(
 			pos1,

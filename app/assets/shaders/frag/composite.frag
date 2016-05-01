@@ -10,7 +10,4 @@ void main() {
 	vec4 blend = vec4(texture2D( u_imageText, v_texCoord));
 
     gl_FragColor = vec4(abs(base.rgb-blend.rgb),1.);
-    // gl_FragColor = abs(blend);
-    // gl_FragColor = vec4(1.0,0.,0.,1.);
-
 }

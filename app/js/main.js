@@ -14,9 +14,7 @@ requirejs.config({
     
     // this just makes sure aero is loaded first
     shim: {
-        'greensock/easing/EasePack.min': ['greensock/TweenLite.min'], 
-        "assets/jsPrograms/time.js": ['aero'],
-        "assets/jsPrograms/sine.js": ['aero'],
+        'greensock/easing/EasePack.min': ['greensock/TweenLite.min'],
         "assets/jsPrograms/polyJon.js": ['aero'],
         "assets/jsPrograms/textSlide.js": ['aero']
     }
@@ -34,8 +32,6 @@ require([
         'greensock/TweenLite.min',
         'greensock/easing/EasePack.min',
         
-        "assets/jsPrograms/time.js",
-        "assets/jsPrograms/sine.js",
         "assets/jsPrograms/polyJon.js",
         "assets/jsPrograms/textSlide.js",
         
@@ -62,13 +58,6 @@ require([
         },
 
         "JSPrograms": {
-            "time": {
-                "id": "time"
-            },
-            "sine": {
-                "id": "sine",
-                "range": [0, 2]
-            },
             "polyJon": {
                 "id": "polyJon",
                 "paths": {
@@ -141,18 +130,6 @@ require([
                 "dest":     {   "id":   "textSlide",
                                 "var":  "u_imageTex"  }
             },
-            {
-                "source":   {   "id":   "time",
-                                "var":  "value"},
-                "dest":     {   "id":   "sine",
-                                "var":  "value"}
-            },
-            // {
-            //     "source":   {   "id":   "sine",
-            //                     "var":  "value"},
-            //     "dest":     {   "id":   "textSlide",
-            //                     "var":  "u_reveal"}
-            // },
             {
                 "source":   {   "id":   "textSlide",  "var":  "texUnit" },
                 "dest":     {   "id":   "composite",
