@@ -9,4 +9,4 @@ The assets folder within the roots contains the assets I used to create the tria
 
 * I ran the original photos (assets/photos) through DMesh (http://dmesh.thedofl.com/) and saved out the generated pdfs (assets/pdf)
 * I took the pdfs into illustrator (assets/photos.ai) which I used to output svgs of each (assets/svg)
-* I wrote a node script (assets/svgProcess.js) that loaded the svgs, read the color and points of each triangle and saved out json's that were read to upload directly into a webGL buffer. The node script also adds extra triangles to the images so that they all have a matching number. This way I can just transition from one image to the next by interpolating the points in a vertex shader.
+* I wrote a node script (assets/svgProcess.js) that loaded the svgs, read the color and points of each triangle and saved out json files containing a single array that is ready to upload directly into a webGL buffer. The node script also adds extra triangles to the images so that they all have a matching number. This way I can just transition from one image to the next by interpolating the points in a vertex shader.
