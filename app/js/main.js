@@ -3,7 +3,7 @@ requirejs.config({
     paths : {
         text: '../bower_components/text/text',
         greensock: '../bower_components/gsap/src/minified',
-        jsProgramsFolder: '../assets/jsPrograms',
+        jsPrograms: '../assets/jsPrograms'
     },
     
     map: {
@@ -14,9 +14,9 @@ requirejs.config({
     
     // this just makes sure aero is loaded first
     shim: {
-        'greensock/easing/EasePack.min': ['greensock/TweenLite.min'],
-        '../assets/jsPrograms/polyJon.js': ['aero'],
-        '../assets/jsPrograms/textSlide.js': ['aero']
+        'jsPrograms/polyJon': ['aero'],
+        'jsPrograms/textSlide': ['aero'],
+        'greensock/easing/EasePack.min': ['greensock/TweenLite.min']
     }
 });
 
@@ -32,8 +32,8 @@ require([
         'greensock/TweenLite.min',
         'greensock/easing/EasePack.min',
         
-        '../assets/jsPrograms/polyJon.js',
-        '../assets/jsPrograms/textSlide.js',
+        'jsPrograms/polyJon',
+        'jsPrograms/textSlide',
         
         'OBLIO/utils/ArrayExecuter'
     ], function(topPath, leftPath, bottomPath, rightPath, fullPath) {
