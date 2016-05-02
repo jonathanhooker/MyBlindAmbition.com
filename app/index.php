@@ -12,7 +12,7 @@
         <meta property="og:site_name" content="MyBlindAmbition"/>
         <meta itemprop="name" content="MyBlindAmbition" />
         
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
 		        
 	</head>
 	<body>

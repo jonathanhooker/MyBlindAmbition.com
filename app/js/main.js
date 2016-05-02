@@ -15,8 +15,8 @@ requirejs.config({
     // this just makes sure aero is loaded first
     shim: {
         'greensock/easing/EasePack.min': ['greensock/TweenLite.min'],
-        'assets/jsPrograms/polyJon.js': ['aero'],
-        'assets/jsPrograms/textSlide.js': ['aero']
+        '../assets/jsPrograms/polyJon.js': ['aero'],
+        '../assets/jsPrograms/textSlide.js': ['aero']
     }
 });
 
